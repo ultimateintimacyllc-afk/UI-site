@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Intimacy L.L.C.</title>
+<meta name="description" content="Professional Adult Content Production with Artistic Excellence and Legal Precision">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--purple:oklch(45% 0.2 300);--purple-light:oklch(55% 0.18 300);--purple-dark:oklch(30% 0.15 300);
+--bg:oklch(8% 0.01 300);--surface:oklch(12% 0.015 300);--surface-elevated:oklch(16% 0.012 300);
+--cream:oklch(92% 0.01 85);--cream-dim:oklch(72% 0.008 85);
+--gold:oklch(75% 0.12 85);--gold-light:oklch(82% 0.10 85);
+--ease-out:cubic-bezier(0.16,1,0.3,1);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;font-weight:300;background:var(--bg);color:var(--cream);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:400;text-wrap:balance}
+a{color:inherit;text-decoration:none}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;background:oklch(5% 0.008 300/.92);backdrop-filter:blur(12px);border-bottom:1px solid oklch(20% 0.01 300/.4)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--gold);letter-spacing:.04em}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{color:var(--cream-dim);font-size:.65rem;text-transform:uppercase;letter-spacing:.14em;font-weight:400;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 24px 80px;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,oklch(15% 0.04 300) 0%,var(--bg) 65%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:700px}
+.hero-eyebrow{font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:var(--purple-light);margin-bottom:20px;font-weight:500}
+.hero h1{font-size:clamp(2.4rem,5vw,3.8rem);line-height:1.1;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:.9rem;color:var(--cream-dim);max-width:50ch;margin:0 auto 40px;line-height:1.7}
+.btn{display:inline-block;padding:14px 38px;font-family:'Montserrat',sans-serif;font-size:.65rem;text-transform:uppercase;letter-spacing:.16em;font-weight:500;border:1px solid var(--purple-light);color:var(--purple-light);background:transparent;cursor:pointer;transition:background .3s var(--ease-out),color .3s var(--ease-out)}
+.btn:hover{background:var(--purple-light);color:var(--bg)}
+.btn-gold{border-color:var(--gold);color:var(--gold)}
+.btn-gold:hover{background:var(--gold);color:var(--bg)}
+
+/* SECTIONS */
+section{padding:80px 32px;max-width:1000px;margin:0 auto}
+.section-eyebrow{font-size:.6rem;text-transform:uppercase;letter-spacing:.2em;color:var(--purple-light);margin-bottom:14px;font-weight:500}
+.section-title{font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:20px}
+.section-desc{color:var(--cream-dim);max-width:55ch;margin-bottom:40px;line-height:1.7;font-size:.88rem}
+
+/* SERVICES GRID */
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.service-item{padding:36px 28px;background:var(--surface);border:1px solid oklch(20% 0.012 300);transition:border-color .3s var(--ease-out),transform .3s var(--ease-out)}
+.service-item:hover{border-color:oklch(35% 0.08 300);transform:translateY(-2px)}
+.service-item h3{font-size:1.2rem;margin-bottom:10px;color:var(--cream)}
+.service-item p{color:var(--cream-dim);font-size:.82rem;line-height:1.7}
+
+/* CONTACT */
+.contact-section{background:var(--surface);border:1px solid oklch(18% 0.01 300);padding:48px;margin:0 auto;max-width:600px}
+.contact-section h2{text-align:center;margin-bottom:24px;font-size:1.6rem}
+form label{display:block;font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--cream-dim);margin-bottom:6px;font-weight:400;margin-top:16px}
+form input,form textarea{width:100%;padding:12px 14px;background:var(--surface-elevated);border:1px solid oklch(22% 0.01 300);color:var(--cream);font-family:'Montserrat',sans-serif;font-size:.85rem;font-weight:300;transition:border-color .2s}
+form input:focus,form textarea:focus{outline:none;border-color:var(--purple-light)}
+form textarea{resize:vertical;min-height:100px}
+form button{margin-top:24px;width:100%}
+
+/* FOOTER */
+footer{padding:48px 32px 24px;border-top:1px solid oklch(16% 0.01 300);text-align:center}
+.footer-brand{font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);margin-bottom:8px}
+footer p{font-size:.7rem;color:oklch(45% 0.008 300);line-height:1.8}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+nav{padding:14px 16px}
+.nav-links{gap:16px}
+section{padding:56px 16px}
+.contact-section{padding:32px 20px;margin:0 16px}
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#" class="nav-logo">Ultimate Intimacy L.L.C.</a>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<div class="hero-content">
+<p class="hero-eyebrow">Professional Content Production</p>
+<h1>Artistic Excellence and <em>Legal Precision</em></h1>
+<p class="hero-sub">Ultimate Intimacy L.L.C. is a full-service adult content production studio dedicated to creating high-quality, artistically compelling content across boudoir, nude, erotic, fetish, XXX, and BDSM genres.</p>
+<a href="#services" class="btn">Explore Our Services</a>
+</div>
+</div>
+
+<section id="services">
+<p class="section-eyebrow">What We Do</p>
+<h2 class="section-title">Our Services</h2>
+<p class="section-desc">We blend artistic expression with premium production standards, offering comprehensive solutions from concept development through final distribution.</p>
+<div class="services-grid">
+<div class="service-item">
+<h3>Photography Services</h3>
+<p>Professional boudoir, nude, erotic, fetish, and BDSM photography with expert lighting, composition, and mood direction. We capture intimacy and sensuality while maintaining artistic integrity and aesthetic excellence for both personal and commercial use.</p>
+</div>
+<div class="service-item">
+<h3>Video Production</h3>
+<p>High-quality video content production including scripted scenes, improvised performances, fetish-specific content, and XXX productions. Our workflow emphasizes clarity, sound quality, and visual consistency optimized for premium subscription platforms and pay-per-view distribution.</p>
+</div>
+<div class="service-item">
+<h3>Live Streaming &amp; Performance</h3>
+<p>Complete live streaming solutions including technical setup, platform management, and performance guidance for OnlyFans, Fansly, and other subscription services. We focus on audience interaction, real-time monetization strategies, and sustainable performer engagement.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact-section">
+<h2>Contact Us</h2>
+<form onsubmit="event.preventDefault();this.style.display='none';document.getElementById('success').style.display='block'">
+<label>Name</label>
+<input type="text" name="name" required>
+<label>Email</label>
+<input type="email" name="email" required>
+<label>Message</label>
+<textarea name="message" rows="4"></textarea>
+<button type="submit" class="btn btn-gold">Submit</button>
+</form>
+<div id="success" style="display:none;text-align:center;padding:40px 0">
+<h3 style="color:var(--gold);margin-bottom:12px">Message Sent!</h3>
+<p style="color:var(--cream-dim);font-size:.85rem">We'll get back to you within 24 hours.</p>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-brand">Ultimate Intimacy L.L.C.</div>
+<p>10:00am – 8:00pm PST<br><br>© 2026 Ultimate Intimacy L.L.C. All rights reserved.</p>
+</footer>
+</body>
+</html>
